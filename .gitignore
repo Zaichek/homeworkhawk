@@ -3,3 +3,8 @@ __pycache__/
 evidence/dbg_*
 evidence/web_graded_sample.png
 .DS_Store
+docs/video/segs/
+docs/video/chk*.png
+docs/video/concat.txt
+docs/video/list.txt
+docs/video/assemble.sh

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><style>
+@page{size:1600px 900px;margin:0}
+body{font-family:"Segoe UI",Arial,sans-serif;margin:0;background:#10141f;color:#e8ecf4;
+padding:60px 80px;box-sizing:border-box;width:1600px;height:900px}
+h1{font-size:52px;margin:0 0 10px;color:#fff}
+h2{font-size:38px;margin:0 0 18px;color:#7ea4ff}
+p,li{font-size:27px;line-height:1.55;color:#c7d2e8}
+.k{color:#7bd88f;font-weight:700}.o{color:#ffb454;font-weight:700}
+img{max-width:1380px;max-height:660px;border-radius:12px;border:1px solid #2a3450}
+table{font-size:26px;border-collapse:collapse}
+td,th{padding:10px 22px;border-bottom:1px solid #2a3450;text-align:left}
+th{color:#7ea4ff}
+.big{font-size:44px;color:#fff;font-weight:800}
+.small{font-size:22px;color:#8fa3c0}
+</style><h2>Measured on 18 labeled worksheets × 6 degradations</h2>
+<table>
+<tr><th>Metric</th><th>Result</th></tr>
+<tr><td>Page-detection IoU (perspective-warped)</td><td><span class=k>0.998</span></td></tr>
+<tr><td>Question segmentation (clean · shadow · faint · erased)</td><td><span class=k>≈ 100%</span> (overall 81%, incl. warped edges)</td></tr>
+<tr><td>Handwritten answer exact-read</td><td><span class=k>93.3%</span></td></tr>
+<tr><td>Grading decision accuracy</td><td><span class=k>85.6%</span></td></tr>
+<tr><td>Blur photos correctly rejected by the gate</td><td><span class=k>3 / 3</span></td></tr>
+<tr><td>Latency per page</td><td><span class=k>0.15 – 0.30 s</span>, CPU only</td></tr>
+</table></body></html>

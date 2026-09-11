@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><style>
+@page{size:1600px 900px;margin:0}
+body{font-family:"Segoe UI",Arial,sans-serif;margin:0;background:#10141f;color:#e8ecf4;
+padding:60px 80px;box-sizing:border-box;width:1600px;height:900px}
+h1{font-size:52px;margin:0 0 10px;color:#fff}
+h2{font-size:38px;margin:0 0 18px;color:#7ea4ff}
+p,li{font-size:27px;line-height:1.55;color:#c7d2e8}
+.k{color:#7bd88f;font-weight:700}.o{color:#ffb454;font-weight:700}
+img{max-width:1380px;max-height:660px;border-radius:12px;border:1px solid #2a3450}
+table{font-size:26px;border-collapse:collapse}
+td,th{padding:10px 22px;border-bottom:1px solid #2a3450;text-align:left}
+th{color:#7ea4ff}
+.big{font-size:44px;color:#fff;font-weight:800}
+.small{font-size:22px;color:#8fa3c0}
+</style><h2>What OpenCV 5 actually does</h2>
+<table>
+<tr><th>Stage</th><th>OpenCV 5 technique</th></tr>
+<tr><td>Quality gate</td><td>Laplacian variance · clipped-white glare — asks for a <span class=k>re-shoot</span> when the photo is unusable</td></tr>
+<tr><td>Page rectification</td><td>Contours → approxPolyDP quad → perspective warp — <span class=k>IoU 0.998</span></td></tr>
+<tr><td>Flatten + separate</td><td>Background-division deshadow · two-level intensity: toner ≪ pencil</td></tr>
+<tr><td>Question segmentation</td><td>Projection profiles · ruling exclusion · answer zone right of "="</td></tr>
+<tr><td>Answer reading</td><td>Connected-component glyphs · fixed-grid cosine vs digit templates — <span class=k>93.3%</span> exact read</td></tr>
+</table></body></html>
