@@ -1,0 +1,18 @@
+{
+  "quality": {
+    "blur": 10.9,
+    "glare": 0.0,
+    "dark": 0.0,
+    "size": [
+      1754,
+      1240
+    ],
+    "verdict": "reshoot",
+    "reasons": [
+      "blurry"
+    ]
+  },
+  "page_found": false,
+  "questions": [],
+  "total_seconds": 0.018
+}

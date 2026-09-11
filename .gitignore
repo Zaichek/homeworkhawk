@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+evidence/dbg_*
+evidence/web_graded_sample.png
+.DS_Store

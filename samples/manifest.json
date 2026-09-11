@@ -1,0 +1,1259 @@
+[
+ {
+  "file": "w0_flat.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "flat"
+ },
+ {
+  "file": "w0_persp.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": [
+   [
+    29.760000228881836,
+    105.23999786376953
+   ],
+   [
+    1225.1199951171875,
+    52.619998931884766
+   ],
+   [
+    1173.0400390625,
+    1711.904052734375
+   ],
+   [
+    59.52000045776367,
+    1669.8079833984375
+   ]
+  ],
+  "case": "persp"
+ },
+ {
+  "file": "w0_shadow.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "shadow"
+ },
+ {
+  "file": "w0_blur.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "blur"
+ },
+ {
+  "file": "w0_faint.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "faint"
+ },
+ {
+  "file": "w0_erase.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "1081",
+    "written": "1001",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "1083",
+    "written": "1093",
+    "is_correct": false
+   },
+   {
+    "q": 3,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "45",
+    "written": "45",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "647",
+    "written": "647",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "711",
+    "written": "711",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "542",
+    "written": "542",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "35",
+    "written": "35",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "1328",
+    "written": "1328",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "erase"
+ },
+ {
+  "file": "w1_flat.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "flat"
+ },
+ {
+  "file": "w1_persp.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": [
+   [
+    29.760000228881836,
+    105.23999786376953
+   ],
+   [
+    1225.1199951171875,
+    52.619998931884766
+   ],
+   [
+    1173.0400390625,
+    1711.904052734375
+   ],
+   [
+    59.52000045776367,
+    1669.8079833984375
+   ]
+  ],
+  "case": "persp"
+ },
+ {
+  "file": "w1_shadow.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "shadow"
+ },
+ {
+  "file": "w1_blur.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "blur"
+ },
+ {
+  "file": "w1_faint.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "faint"
+ },
+ {
+  "file": "w1_erase.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "8",
+    "is_correct": false
+   },
+   {
+    "q": 2,
+    "expected": "70",
+    "written": "70",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "1611",
+    "written": "1611",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "7",
+    "written": "7",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "164",
+    "written": "164",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "8",
+    "written": "8",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "49",
+    "written": "49",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "63",
+    "written": "63",
+    "is_correct": true
+   },
+   {
+    "q": 9,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "54",
+    "written": "54",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "erase"
+ },
+ {
+  "file": "w2_flat.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "flat"
+ },
+ {
+  "file": "w2_persp.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": [
+   [
+    29.760000228881836,
+    105.23999786376953
+   ],
+   [
+    1225.1199951171875,
+    52.619998931884766
+   ],
+   [
+    1173.0400390625,
+    1711.904052734375
+   ],
+   [
+    59.52000045776367,
+    1669.8079833984375
+   ]
+  ],
+  "case": "persp"
+ },
+ {
+  "file": "w2_shadow.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "shadow"
+ },
+ {
+  "file": "w2_blur.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "blur"
+ },
+ {
+  "file": "w2_faint.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "faint"
+ },
+ {
+  "file": "w2_erase.png",
+  "truth": [
+   {
+    "q": 1,
+    "expected": "5",
+    "written": "5",
+    "is_correct": true
+   },
+   {
+    "q": 2,
+    "expected": "9",
+    "written": "9",
+    "is_correct": true
+   },
+   {
+    "q": 3,
+    "expected": "36",
+    "written": "36",
+    "is_correct": true
+   },
+   {
+    "q": 4,
+    "expected": "1204",
+    "written": "1204",
+    "is_correct": true
+   },
+   {
+    "q": 5,
+    "expected": "4",
+    "written": "4",
+    "is_correct": true
+   },
+   {
+    "q": 6,
+    "expected": "702",
+    "written": "702",
+    "is_correct": true
+   },
+   {
+    "q": 7,
+    "expected": "1067",
+    "written": "1067",
+    "is_correct": true
+   },
+   {
+    "q": 8,
+    "expected": "165",
+    "written": "195",
+    "is_correct": false
+   },
+   {
+    "q": 9,
+    "expected": "1568",
+    "written": "1568",
+    "is_correct": true
+   },
+   {
+    "q": 10,
+    "expected": "72",
+    "written": "72",
+    "is_correct": true
+   }
+  ],
+  "quad": null,
+  "case": "erase"
+ }
+]

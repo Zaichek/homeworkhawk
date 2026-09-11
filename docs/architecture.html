@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@page{size:1600px 900px;margin:0}
+body{font-family:"Segoe UI",Arial,sans-serif;margin:0;background:#10141f;color:#e8ecf4;padding:28px;box-sizing:border-box;width:1600px;height:900px}
+h1{font-size:26px;margin:0 0 2px}.sub{color:#8fa3c0;font-size:15px;margin-bottom:18px}
+.row{display:flex;align-items:stretch;gap:14px;margin-bottom:14px}
+.stage{background:#1a2133;border:1px solid #2a3450;border-radius:10px;padding:12px 14px;flex:1;min-width:0}
+.stage h3{margin:0 0 6px;font-size:15px;color:#7ea4ff}
+.stage p{margin:0;font-size:12.5px;color:#aeb9d0;line-height:1.45}
+.cv{border-left:4px solid #3d6df2}
+.aws{border-left:4px solid #ff9900}
+.agent{border-left:4px solid #7bd88f}
+.arrow{display:flex;align-items:center;color:#3d6df2;font-size:22px;font-weight:700}
+.loop{border:2px dashed #7bd88f;border-radius:12px;padding:14px;background:rgba(123,216,143,.05)}
+.loop h2{margin:0 0 8px;font-size:16px;color:#7bd88f}
+.footer{margin-top:14px;font-size:12.5px;color:#8fa3c0}
+.tag{display:inline-block;background:#24304d;border-radius:99px;padding:2px 10px;font-size:12px;margin:2px 4px 2px 0}
+</style></head><body>
+<h1>HomeworkHawk — architecture</h1>
+<div class="sub">OpenCV AI Competition 2026 · Team Zaichek Labs · blue = OpenCV 5 stage · green = agentic decision loop · orange = AWS</div>
+
+<div class="row">
+  <div class="stage"><h3>📷 Phone photo</h3><p>One shot of the finished worksheet — any angle, household lighting.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage cv"><h3>0 · Quality gate</h3><p>Laplacian-variance blur · clipped-white glare · darkness ratios.<br><b>Decision:</b> reject → <i>ask parent to re-shoot</i>.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage cv"><h3>1 · Page rectification</h3><p>Canny → contours → approxPolyDP quad → perspective warp.<br><b>Decision:</b> no quad → <i>retry with looser Canny</i> (params are tool args).<br>IoU 0.998 on warped sheets.</p></div>
+</div>
+<div class="row">
+  <div class="stage cv"><h3>2 · Flatten + separate</h3><p>Background-division deshadow · two-level intensity split (toner ≪ pencil) · dilated-print subtraction → printed mask / handwriting mask.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage cv"><h3>3 · Question segmentation</h3><p>Projection profiles · ruling exclusion · question-number blob header filter · row expansion · answer zone = handwriting right of "=". <b>~100%</b> on clean/shadow/faint/erased.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage cv"><h3>4 · Answer reading</h3><p>Connected-component blobs · fragment-only merge · aspect-preserved 40×30 grid · cosine vs rendered digit banks.<br><b>93.3%</b> exact string read.</p></div>
+</div>
+
+<div class="loop">
+  <h2>5 · Agentic decision loop — vision evidence changes the next action</h2>
+  <div class="row">
+    <div class="stage agent"><h3>perceive</h3><p>per-digit confidence from the reader (e.g. 0.61 on a smudged "8").</p></div>
+    <div class="arrow">→</div>
+    <div class="stage agent"><h3>decide</h3><p>conf ≥ 0.72 → grade · &lt; 0.72 → re-run vision · still weak → escalate.</p></div>
+    <div class="arrow">→</div>
+    <div class="stage agent"><h3>act (OpenCV tool)</h3><p>Otsu re-binarize row → re-read · or zoom · or <b>escalate to the parent</b> (human-in-the-loop). Every step → trace JSON.</p></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="stage"><h3>📊 Output</h3><p>Graded page overlay (green/amber/red per question, score chips) · per-question verdicts with digit-level error position · replayable agent trace.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage aws"><h3>☁️ AWS (same handler)</h3><p>Lambda (Python 3.12, Graviton/x86) + OpenCV 5 headless layer · Function URL · S3 per-stage evidence (lifecycle expiry) · CloudWatch per-stage metrics.</p></div>
+  <div class="arrow">→</div>
+  <div class="stage"><h3>👨‍👩‍👧 Human in the loop</h3><p>Ambiguous marks escalate — the system says "not sure" instead of guessing about a child's work.</p></div>
+</div>
+
+<div class="footer">
+<span class="tag">grading decision accuracy 85.6%</span><span class="tag">answer read 93.3%</span><span class="tag">0.15–0.30 s / page CPU</span><span class="tag">deps: opencv-python 5 · numpy · pillow</span>
+</div>
+</body></html>

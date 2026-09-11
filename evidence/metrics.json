@@ -1,0 +1,574 @@
+[
+ {
+  "file": "w0_flat.png",
+  "case": "flat",
+  "quality": {
+   "blur": 630.9,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.25,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1
+  ]
+ },
+ {
+  "file": "w0_persp.png",
+  "case": "persp",
+  "quality": {
+   "blur": 355.6,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.153,
+  "questions_found": 9,
+  "questions_truth": 10,
+  "page_iou": 0.998,
+  "grade_correct_calls": 6,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 1,
+  "attempts_hist": [
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w0_shadow.png",
+  "case": "shadow",
+  "quality": {
+   "blur": 472.8,
+   "glare": 0.0,
+   "dark": 0.0008,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.225,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1
+  ]
+ },
+ {
+  "file": "w0_blur.png",
+  "case": "blur",
+  "quality": {
+   "blur": 11.3,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "reshoot",
+   "reasons": [
+    "blurry"
+   ]
+  },
+  "secs": 0.014,
+  "questions_found": 0,
+  "questions_truth": 10,
+  "gate": "reshoot:blurry"
+ },
+ {
+  "file": "w0_faint.png",
+  "case": "faint",
+  "quality": {
+   "blur": 626.5,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.199,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1
+  ]
+ },
+ {
+  "file": "w0_erase.png",
+  "case": "erase",
+  "quality": {
+   "blur": 629.3,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.188,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1
+  ]
+ },
+ {
+  "file": "w1_flat.png",
+  "case": "flat",
+  "quality": {
+   "blur": 583.4,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.188,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w1_persp.png",
+  "case": "persp",
+  "quality": {
+   "blur": 329.2,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.162,
+  "questions_found": 8,
+  "questions_truth": 10,
+  "page_iou": 0.998,
+  "grade_correct_calls": 6,
+  "grade_mismatch": 1,
+  "escalated": 0,
+  "unclear": 1,
+  "attempts_hist": [
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w1_shadow.png",
+  "case": "shadow",
+  "quality": {
+   "blur": 439.3,
+   "glare": 0.0,
+   "dark": 0.0006,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.225,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w1_blur.png",
+  "case": "blur",
+  "quality": {
+   "blur": 10.1,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "reshoot",
+   "reasons": [
+    "blurry"
+   ]
+  },
+  "secs": 0.018,
+  "questions_found": 0,
+  "questions_truth": 10,
+  "gate": "reshoot:blurry"
+ },
+ {
+  "file": "w1_faint.png",
+  "case": "faint",
+  "quality": {
+   "blur": 586.8,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.222,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 10,
+  "grade_mismatch": 0,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w1_erase.png",
+  "case": "erase",
+  "quality": {
+   "blur": 581.9,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.264,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 8,
+  "grade_mismatch": 2,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   2,
+   1,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w2_flat.png",
+  "case": "flat",
+  "quality": {
+   "blur": 618.3,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.25,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 10,
+  "grade_mismatch": 0,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w2_persp.png",
+  "case": "persp",
+  "quality": {
+   "blur": 348.9,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.197,
+  "questions_found": 9,
+  "questions_truth": 10,
+  "page_iou": 0.998,
+  "grade_correct_calls": 7,
+  "grade_mismatch": 1,
+  "escalated": 0,
+  "unclear": 1,
+  "attempts_hist": [
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w2_shadow.png",
+  "case": "shadow",
+  "quality": {
+   "blur": 460.4,
+   "glare": 0.0,
+   "dark": 0.0008,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.28,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 10,
+  "grade_mismatch": 0,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w2_blur.png",
+  "case": "blur",
+  "quality": {
+   "blur": 10.9,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "reshoot",
+   "reasons": [
+    "blurry"
+   ]
+  },
+  "secs": 0.023,
+  "questions_found": 0,
+  "questions_truth": 10,
+  "gate": "reshoot:blurry"
+ },
+ {
+  "file": "w2_faint.png",
+  "case": "faint",
+  "quality": {
+   "blur": 616.0,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.204,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 10,
+  "grade_mismatch": 0,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "file": "w2_erase.png",
+  "case": "erase",
+  "quality": {
+   "blur": 616.8,
+   "glare": 0.0,
+   "dark": 0.0,
+   "size": [
+    1754,
+    1240
+   ],
+   "verdict": "accept",
+   "reasons": []
+  },
+  "secs": 0.29,
+  "questions_found": 10,
+  "questions_truth": 10,
+  "grade_correct_calls": 10,
+  "grade_mismatch": 0,
+  "escalated": 0,
+  "unclear": 0,
+  "attempts_hist": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ }
+]

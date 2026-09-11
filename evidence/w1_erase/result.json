@@ -1,0 +1,121 @@
+{
+  "quality": {
+    "blur": 581.9,
+    "glare": 0.0,
+    "dark": 0.0,
+    "size": [
+      1754,
+      1240
+    ],
+    "verdict": "accept",
+    "reasons": []
+  },
+  "page_found": true,
+  "questions": [
+    {
+      "index": 1,
+      "expected": "5",
+      "score": 0.911,
+      "verdict": "wrong",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 2,
+      "expected": "70",
+      "score": 0.887,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 3,
+      "expected": "1611",
+      "score": 0.76,
+      "verdict": "wrong",
+      "attempts": 2,
+      "trace": [
+        {
+          "step": 2,
+          "tool": "rebinarize+re-read",
+          "params": {
+            "method": "otsu"
+          },
+          "perception": {
+            "score": 0.76
+          },
+          "decision": "accept_retry"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "expected": "7",
+      "score": 0.905,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 5,
+      "expected": "164",
+      "score": 0.797,
+      "verdict": "wrong",
+      "attempts": 2,
+      "trace": [
+        {
+          "step": 2,
+          "tool": "rebinarize+re-read",
+          "params": {
+            "method": "otsu"
+          },
+          "perception": {
+            "score": 0.797
+          },
+          "decision": "accept_retry"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "expected": "8",
+      "score": 0.889,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 7,
+      "expected": "49",
+      "score": 0.905,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 8,
+      "expected": "63",
+      "score": 0.861,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 9,
+      "expected": "5",
+      "score": 0.905,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    },
+    {
+      "index": 10,
+      "expected": "54",
+      "score": 0.843,
+      "verdict": "correct",
+      "attempts": 1,
+      "trace": []
+    }
+  ],
+  "total_seconds": 0.264
+}
