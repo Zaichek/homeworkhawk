@@ -58,9 +58,12 @@ class RunResult:
 
 
 def process_photo(bgr: np.ndarray, answer_key: dict[int, str],
-                  explainer=None) -> RunResult:
+                  explainer=None, force_otsu_for: set[int] | None = None) -> RunResult:
     """Full agentic run over one photo. answer_key maps question index →
-    expected answer (the parent or worksheet bank supplies it)."""
+    expected answer (the parent or worksheet bank supplies it).
+    force_otsu_for: question indices whose FIRST read must use Otsu global
+    binarization (a caller-requested parameter change — used by the Strands
+    orchestration layer when the default read was unconvincing)."""
     t0 = time.perf_counter()
     steps_log: list[Step] = [Step(0, "quality_gate", {}, {}, "")]
     q = quality.assess(bgr)
@@ -100,6 +103,11 @@ def process_photo(bgr: np.ndarray, answer_key: dict[int, str],
             results.append(QuestionResult(ci, "?", 0.0, "no_key", 1))
             continue
         mask = cell["hw_answer_img"]
+        if force_otsu_for and ci in force_otsu_for:
+            # caller-requested parameter change: read this row with Otsu
+            y0, y1, x0, x1 = cell["box"]
+            row = warped[y0:y1, x0:x1]
+            mask = separate.binarize(separate.deshadow(row), "otsu")
         read = matcher.read_answer(mask)
         cmp = matcher.compare(read, expected)
         attempts = 1
