@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>HomeworkHawk for Alexa+ — simulated experience</title>
+<style>
+  :root { --bg:#0f1720; --card:#1b2836; --ink:#e8eef4; --dim:#8fa3b5; --acc:#31c4f3; --ok:#3ddc84; --warn:#ffb74d; --bad:#ff5c6c; }
+  * { box-sizing:border-box; margin:0 }
+  body { background:var(--bg); color:var(--ink); font:15px/1.6 "Segoe UI",system-ui; display:flex; min-height:100vh; justify-content:center; padding:24px }
+  .stage { display:flex; gap:24px; max-width:1080px; width:100%; align-items:stretch }
+  .echo { flex:0 0 400px; background:var(--card); border-radius:26px; padding:22px; display:flex; flex-direction:column; box-shadow:0 12px 40px rgba(0,0,0,.45) }
+  .echo-screen { background:#04121c; border-radius:18px; min-height:420px; padding:18px; display:flex; flex-direction:column; gap:12px; border:1px solid #123 }
+  .echo-brand { text-align:center; color:var(--acc); font-weight:600; letter-spacing:.5px; font-size:13px }
+  . convo { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:10px }
+  .line { padding:8px 12px; border-radius:12px; max-width:88%; font-size:14px }
+  .alexa { background:#0e2a3a; align-self:flex-start }
+  .user { background:#123b5c; align-self:flex-end }
+  .hint { color:var(--dim); font-size:12px; text-align:center }
+  .mic { align-self:center; width:64px; height:64px; border-radius:50%; background:var(--acc); border:none; color:#04121c; font-size:26px; cursor:pointer; box-shadow:0 0 0 0 rgba(49,196,243,.5); transition:box-shadow .3s }
+  .mic.listening { animation:pulse 1.2s infinite }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(49,196,243,.55)} 100%{box-shadow:0 0 0 26px rgba(49,196,243,0)} }
+  .side { flex:1; display:flex; flex-direction:column; gap:16px }
+  .panel { background:var(--card); border-radius:16px; padding:18px }
+  .panel h3 { font-size:14px; color:var(--dim); margin-bottom:10px; text-transform:uppercase; letter-spacing:.6px }
+  .samples { display:grid; grid-template-columns:repeat(3,1fr); gap:8px }
+  .sample { background:#0e2a3a; border:1px solid #16405c; border-radius:10px; padding:8px; cursor:pointer; font-size:11px; color:var(--ink); text-align:center }
+  .sample.sel { border-color:var(--acc); box-shadow:0 0 0 2px rgba(49,196,243,.3) }
+  .grades { display:flex; flex-direction:column; gap:6px }
+  .qrow { display:flex; justify-content:space-between; padding:7px 12px; border-radius:9px; background:#0e2a3a; font-size:13px }
+  .v-correct { color:var(--ok) } .v-wrong { color:var(--bad) } .v-unclear,.v-escalated { color:var(--warn) }
+  .stats { display:flex; gap:10px }
+  .stat { flex:1; background:#04121c; border-radius:10px; padding:10px; text-align:center }
+  .stat b { display:block; font-size:22px; color:var(--acc) }
+  .stat span { font-size:11px; color:var(--dim) }
+  button:disabled { opacity:.4; cursor:default }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="echo">
+    <div class="echo-screen">
+      <div class="echo-brand">✦ ALEXA+ · HomeworkHawk</div>
+      <div class="convo" id="convo"><div class="hint">Say “Alexa, check my kid’s homework”<br>or tap the mic</div></div>
+    </div>
+    <button class="mic" id="mic" title="Tap to talk">🎙</button>
+    <div class="hint" id="status">Simulated Alexa+ experience · real OpenCV 5 grading</div>
+  </div>
+  <div class="side">
+    <div class="panel"><h3>Worksheet under the camera</h3>
+      <div class="samples" id="samples"></div>
+      <div class="hint" style="margin-top:8px">Demo stand-in for the Echo Show camera feed — pick what the parent placed under the lamp</div>
+    </div>
+    <div class="panel"><h3>Graded page</h3>
+      <div class="stats"><div class="stat"><b id="s-c">–</b><span>correct</span></div><div class="stat"><b id="s-w">–</b><span>wrong</span></div><div class="stat"><b id="s-e">–</b><span>escalated</span></div><div class="stat"><b id="s-t">–</b><span>seconds</span></div></div>
+      <div class="grades" id="grades"></div>
+    </div>
+  </div>
+</div>
+<script>
+const $ = id => document.getElementById(id);
+let chosen = null, busy = false;
+let key = null;
+
+async function loadSamples(){
+  const list = await (await fetch('/sample-list')).json();
+  $('samples').innerHTML = '';
+  for (const s of list){
+    const d = document.createElement('div');
+    d.className = 'sample'; d.textContent = s.file.replace('.png','');
+    d.onclick = () => { document.querySelectorAll('.sample').forEach(x=>x.classList.remove('sel')); d.classList.add('sel'); chosen = s.file; key = s.key; };
+    $('samples').appendChild(d);
+  }
+  document.querySelector('.sample').click();
+}
+function say(text, who='alexa'){
+  const l = document.createElement('div'); l.className = 'line ' + who; l.textContent = text;
+  $('convo').appendChild(l); $('convo').scrollTop = 1e6;
+  if (who==='alexa' && window.speechSynthesis){
+    const u = new SpeechSynthesisUtterance(text); u.rate = 1.02; u.pitch = 1;
+    speechSynthesis.speak(u);
+  }
+}
+const wake = () => say('Alexa, check my kid\'s homework.', 'user');
+async function run(){
+  if (busy || !chosen) return; busy = true; $('mic').disabled = true;
+  say('Sure — put the worksheet under the lamp, I\'ll take a look.', 'alexa');
+  await new Promise(r=>setTimeout(r,600));
+  say('(capturing photo of the page…)', 'hint');
+  const t0 = performance.now();
+  // fetch the sample image bytes from disk via grade of pre-known path: we post the file name
+  const res = await fetch('/grade', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({file: chosen, key}) });
+  const r = await res.json();
+  const secs = ((performance.now()-t0)/1000).toFixed(2);
+  const qs = r.questions || [];
+  const c = qs.filter(q=>q.verdict==='correct').length, w = qs.filter(q=>q.verdict==='wrong').length;
+  const e = qs.filter(q=>q.verdict==='unclear'||q.verdict==='escalated').length;
+  $('s-c').textContent=c; $('s-w').textContent=w; $('s-e').textContent=e; $('s-t').textContent=secs;
+  $('grades').innerHTML = qs.map(q=>`<div class="qrow"><span>Q${q.index} · expected ${q.expected}${q.attempts>1?' · '+q.attempts+' reads':''}</span><span class="v-${q.verdict}">${q.verdict}</span></div>`).join('');
+  say(`Done — graded in ${secs} seconds. ${c} of ${qs.length} correct.`, 'alexa');
+  if (w) say(`Worth reviewing together: ${qs.filter(q=>q.verdict==='wrong').map(q=>'question '+q.index).join(', ')}.`, 'alexa');
+  if (e) say(`I couldn't read ${e>1?'a couple of questions':'one question'} confidently — please check ${qs.filter(q=>q.verdict==='unclear'||q.verdict==='escalated').map(q=>'question '+q.index).join(', ')} by hand.`, 'alexa');
+  say('Want me to set a twenty-minute review session for tomorrow evening?', 'alexa');
+  await new Promise(r=>setTimeout(r,400));
+  say('Yes, seven o\'clock works.', 'user');
+  say('Got it — review session tomorrow at seven. I\'ll remind you both. Anything else?', 'alexa');
+  busy = false; $('mic').disabled = false;
+}
+$('mic').onclick = async () => {
+  wake(); await new Promise(r=>setTimeout(r,500)); run();
+};
+loadSamples();
+</script>
+</body>
+</html>
