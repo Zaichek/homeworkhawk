@@ -1,0 +1,8 @@
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg01.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg02.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg03.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg04.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg05.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg06.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg07.mp4'
+file 'E:/HomeworkHawk/docs/video/alexa-slides/seg08.mp4'

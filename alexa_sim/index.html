@@ -95,10 +95,10 @@ async function run(){
   const c = qs.filter(q=>q.verdict==='correct').length, w = qs.filter(q=>q.verdict==='wrong').length;
   const e = qs.filter(q=>q.verdict==='unclear'||q.verdict==='escalated').length;
   $('s-c').textContent=c; $('s-w').textContent=w; $('s-e').textContent=e; $('s-t').textContent=secs;
-  $('grades').innerHTML = qs.map(q=>`<div class="qrow"><span>Q${q.index} · expected ${q.expected}${q.attempts>1?' · '+q.attempts+' reads':''}</span><span class="v-${q.verdict}">${q.verdict}</span></div>`).join('');
+  $('grades').innerHTML = qs.map(q=>`<div class="qrow"><span>Q${q.i} · expected ${q.expected}${q.attempts>1?' · '+q.attempts+' reads':''}</span><span class="v-${q.verdict}">${q.verdict}</span></div>`).join('');
   say(`Done — graded in ${secs} seconds. ${c} of ${qs.length} correct.`, 'alexa');
-  if (w) say(`Worth reviewing together: ${qs.filter(q=>q.verdict==='wrong').map(q=>'question '+q.index).join(', ')}.`, 'alexa');
-  if (e) say(`I couldn't read ${e>1?'a couple of questions':'one question'} confidently — please check ${qs.filter(q=>q.verdict==='unclear'||q.verdict==='escalated').map(q=>'question '+q.index).join(', ')} by hand.`, 'alexa');
+  if (w) say(`Worth reviewing together: ${qs.filter(q=>q.verdict==='wrong').map(q=>'question '+q.i).join(', ')}.`, 'alexa');
+  if (e) say(`I couldn't read ${e>1?'a couple of questions':'one question'} confidently — please check ${qs.filter(q=>q.verdict==='unclear'||q.verdict==='escalated').map(q=>'question '+q.i).join(', ')} by hand.`, 'alexa');
   say('Want me to set a twenty-minute review session for tomorrow evening?', 'alexa');
   await new Promise(r=>setTimeout(r,400));
   say('Yes, seven o\'clock works.', 'user');
@@ -108,7 +108,21 @@ async function run(){
 $('mic').onclick = async () => {
   wake(); await new Promise(r=>setTimeout(r,500)); run();
 };
-loadSamples();
+loadSamples().then(async () => {
+  const stage = new URLSearchParams(location.search).get('stage');
+  if (!stage) return;
+  const wait = ms => new Promise(r=>setTimeout(r,ms));
+  if (stage >= '1') { await wait(400); }
+  if (stage >= '2') { wake(); await wait(600); say('Sure — put the worksheet under the lamp, I will take a look.', 'alexa'); }
+  if (stage >= '3') { say('(capturing photo of the page…)', 'hint'); await wait(500); await run(); }
+  if (stage >= '4') {
+    say('Want me to set a twenty-minute review session for tomorrow evening?', 'alexa');
+    await wait(600);
+    say('Yes, seven o\u2019clock works.', 'user');
+    await wait(500);
+    say('Got it — review session tomorrow at seven. I\u2019ll remind you both.', 'alexa');
+  }
+});
 </script>
 </body>
 </html>

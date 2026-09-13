@@ -1,0 +1,1 @@
+Results come back by voice: six of ten correct, which questions to review together, and any question the system could not read confidently is handed to the parent instead of guessed.

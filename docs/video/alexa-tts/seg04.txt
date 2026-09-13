@@ -1,0 +1,1 @@
+The real Open C V five pipeline runs in a fraction of a second: quality gate, page rectification, print and handwriting separation, and digit-level answer reading.

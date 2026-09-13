@@ -1,0 +1,7 @@
+HomeworkHawk for Alexa Plus — a simulated voice-first homework grading experience.
+The parent says: Alexa, check my kid's homework.
+Alexa asks them to place the finished worksheet under the lamp, and captures the page.
+The real Open C V five pipeline runs in a fraction of a second: quality gate, page rectification, print and handwriting separation, and digit-level answer reading.
+Results come back by voice: six of ten correct, which questions to review together, and any question the system could not read confidently is handed to the parent instead of guessed.
+The parent books a twenty-minute review session for tomorrow evening, and Alexa confirms it on the spot.
+One engine, four surfaces: web, Lambda, phone, and now voice. This is the simulated Alexa Plus experience — the full loop, no hardware required.
