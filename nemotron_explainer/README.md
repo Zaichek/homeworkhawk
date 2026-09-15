@@ -43,3 +43,15 @@ accepts optional `printed` / `given` per question.
 
 With the Nano class model: ~450 input tokens per worksheet (≈ $0.0003) —
 a full class of 30 worksheets costs about one US cent.
+
+## Practice finder (Tavily)
+
+`practice_finder.mjs` adds the retrieval leg: for every wrong/escalated
+question it searches vetted worksheet sites for similar practice problems
+(topic-level queries, never answer-level). Free Researcher tier covers a
+classroom a month (~4 credits/worksheet); the Builder Program adds $25.
+Repo root `.env` (gitignored) holds `TAVILY_API_KEY`.
+
+```bash
+node practice_finder.mjs ../call-e/graded.json --out practice.json
+```

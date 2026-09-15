@@ -8,3 +8,4 @@ docs/video/chk*.png
 docs/video/concat.txt
 docs/video/list.txt
 docs/video/assemble.sh
+.env

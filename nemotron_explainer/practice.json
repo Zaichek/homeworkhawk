@@ -1,0 +1,67 @@
+{
+  "mode": "live",
+  "student": "Alex",
+  "per_question": [
+    {
+      "index": 1,
+      "query": "grade 2 multi-digit arithmetic practice problems worksheet",
+      "escalated": false,
+      "practice": [
+        {
+          "title": "4th Grade Multi-Digit Multiplication Worksheets | Education.com",
+          "url": "https://education.com/resources/grade-4/worksheets/math/multiplication/multi-digit-multiplication"
+        },
+        {
+          "title": "4th Grade Multi-Digit Multiplication Worksheets | Education.com",
+          "url": "https://www.education.com/resources/grade-4/worksheets/math/multiplication/multi-digit-multiplication"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "query": "grade 2 multi-digit arithmetic practice problems worksheet",
+      "escalated": false,
+      "practice": [
+        {
+          "title": "4th Grade Multi-Digit Multiplication Worksheets | Education.com",
+          "url": "https://education.com/resources/grade-4/worksheets/math/multiplication/multi-digit-multiplication"
+        },
+        {
+          "title": "4th Grade Multi-Digit Multiplication Worksheets | Education.com",
+          "url": "https://www.education.com/resources/grade-4/worksheets/math/multiplication/multi-digit-multiplication"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "query": "grade 2 two-digit addition with carrying practice problems worksheet",
+      "escalated": false,
+      "practice": [
+        {
+          "title": "Grade 2 Worksheet - Add two 3-digit numbers in columns, with carrying | K5 Learning",
+          "url": "https://www.k5learning.com/free-math-worksheets/second-grade-2/addition/add-3-digit-numbers-in-columns-with-regrouping"
+        },
+        {
+          "title": "Grade 2 math worksheet: add 2-digit numbers in columns, with carrying | K5 Learning",
+          "url": "https://www.k5learning.com/free-math-worksheets/second-grade-2/addition/add-2-digit-numbers-in-columns-with-regrouping"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "query": "grade 2 two-digit addition with carrying practice problems worksheet",
+      "escalated": false,
+      "practice": [
+        {
+          "title": "Grade 2 Worksheet - Add two 3-digit numbers in columns, with carrying | K5 Learning",
+          "url": "https://www.k5learning.com/free-math-worksheets/second-grade-2/addition/add-3-digit-numbers-in-columns-with-regrouping"
+        },
+        {
+          "title": "Grade 2 math worksheet: add 2-digit numbers in columns, with carrying | K5 Learning",
+          "url": "https://www.k5learning.com/free-math-worksheets/second-grade-2/addition/add-2-digit-numbers-in-columns-with-regrouping"
+        }
+      ]
+    }
+  ],
+  "tavily_credits_used": 4
+}
