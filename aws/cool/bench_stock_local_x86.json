@@ -1,0 +1,24 @@
+{
+  "label": "stock-local-x86",
+  "cv2_version": "5.0.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "build_flags": {
+    "arch_target": "unknown",
+    "neon": false,
+    "third_party": [
+      "simd"
+    ]
+  },
+  "image": "synthetic_1366x720",
+  "ops_ms_median": {
+    "resize_0.5": 0.1228,
+    "adaptive_gaussian": 7.1884,
+    "contours": 1.9311,
+    "gaussian_blur3": 2.3775,
+    "canny": 2.721
+  },
+  "pipeline": {
+    "grade_page_ms_median": 3.491
+  }
+}
